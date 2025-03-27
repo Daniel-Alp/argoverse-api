@@ -44,7 +44,7 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     keywords="self-driving-car dataset-tools",
-    packages=find_packages(exclude=["tests", "integration_tests", "map_files"]),
+    packages=find_packages(exclude=["tests", "integration_tests"]),
     package_data={"argoverse": ["argoverse/visualization/data/**/*"]},
     include_package_data=True,
     python_requires=">= 3.7",
