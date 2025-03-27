@@ -37,9 +37,6 @@ MAX_LABEL_DIST_TO_LANE = 20  # meters
 OUT_OF_RANGE_LANE_DIST_THRESHOLD = 5.0  # 5 meters
 ROI_ISOCONTOUR = 5.0
 
-# argoverse-api/argoverse/map_files
-ROOT = Path(__file__).resolve().parent.parent / "map_files"
-
 # known City IDs from newest to oldest
 MIAMI_ID = 10316
 PITTSBURGH_ID = 10314
@@ -55,7 +52,7 @@ class ArgoverseMap:
     are not provided, but can be hallucinated if one considers an average lane width.
     """
 
-    def __init__(self, root: _PathLike = ROOT) -> None:
+    def __init__(self, root: _PathLike) -> None:
         """Initialize the Argoverse Map."""
         self.root = root
 
