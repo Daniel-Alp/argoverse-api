@@ -29,8 +29,8 @@ from argoverse.utils.manhattan_search import (
 from argoverse.utils.mpl_plotting_utils import plot_lane_segment_patch, visualize_centerline
 from argoverse.utils.se2 import SE2
 
-from .lane_segment import LaneSegment
-from .map_viz_helper import render_global_city_map_bev
+from argoverse.map_representation.lane_segment import LaneSegment
+from argoverse.map_representation.map_viz_helper import render_global_city_map_bev
 
 GROUND_HEIGHT_THRESHOLD = 0.3  # 30 centimeters
 MAX_LABEL_DIST_TO_LANE = 20  # meters
